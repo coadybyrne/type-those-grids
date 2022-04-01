@@ -10,6 +10,14 @@ html{
 
 body {
   margin: 0;
+  padding: 0;
+  font-size: .9rem;
+  font-weight: normal;
+}
+
+header {
+  margin: 1.5rem;
+  font-size: 1.8rem;
 }
 
 img {
@@ -21,12 +29,17 @@ h1, h2, dt {
 }
 
 h1 {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: normal;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
 }
 
 .banner-text h2, .banner-text p {
@@ -39,34 +52,27 @@ figcaption {
 
 main {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "banner banner banner"
-    "column1   column2   column3";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: .75rem;
-  font-family: Merriweather, serif;
+    "box1 box2 box3";
+  gap: .75rem;
 }
 
-.banner-img {
+.banner-image {
+  display: grid;
   grid-area: banner;
 }
 
 .banner-text {
   grid-area: banner;
-  padding: 2rem;
-  align-self: flex-end;
+  color: white;
+  align-self: end;
+  padding: 1rem;
 }
 
-.col1-img {
-  grid-area: col1;
-}
-
-.col2-img {
-  grid-area: col2;
-}
-
-.col3-img {
-  grid-area: col3;
+div h2 {
+  margin: 0;
 }
 
 p {
@@ -76,4 +82,8 @@ p {
 
 figure {
   margin: 0;
+}
+
+dt {
+  font-style: italic;
 }
