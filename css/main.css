@@ -1,4 +1,4 @@
-html{
+html {
   box-sizing: border-box;
   line-height: 1.5;
   font-family: Merriweather, serif;
@@ -21,7 +21,7 @@ header {
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 h1, h2, dt {
