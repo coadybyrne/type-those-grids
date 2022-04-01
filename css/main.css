@@ -9,9 +9,11 @@ html{
 }
 
 body {
-  font-size: .9rem;
   margin: 0;
-  padding: 0;
+}
+
+img {
+  width: 100%
 }
 
 h1, h2, dt {
@@ -37,29 +39,41 @@ figcaption {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "banner banner banner"
-    "box1 box2 box3";
-  gap: .75rem;
+    "column1   column2   column3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .75rem;
+  font-family: Merriweather, serif;
 }
 
-main > img {
+.banner-img {
   grid-area: banner;
-  max-width: inherit;
-}
-
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
 }
 
 .banner-text {
   grid-area: banner;
-  align-self: end;
+  padding: 2rem;
+  align-self: flex-end;
+}
+
+.col1-img {
+  grid-area: col1;
+}
+
+.col2-img {
+  grid-area: col2;
+}
+
+.col3-img {
+  grid-area: col3;
+}
+
+p {
+  margin-top: .5rem;
   color: #fff;
-  padding: 1.5rem 1rem;
+}
+
+figure {
+  margin: 0;
 }
